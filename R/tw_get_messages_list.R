@@ -22,7 +22,7 @@
 #' messages <- tw_get_messages_list()
 #'
 #' }
-tw_get_messages_list <- function(page = 0, page_size = 50){
+tw_get_messages_list <- function(page , page_size ){
   base_url <- "https://api.twilio.com/"
   ua <- user_agent("https://github.com/seankross/twilio")
   path <- paste("2010-04-01", "Accounts", get_sid(), "Messages.json", sep = "/")
